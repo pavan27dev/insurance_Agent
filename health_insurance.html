@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Insurance Agent</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <section class="manju-contact-section">
+        <div class="manju-contact-container">
+            <div class="manju-contact-info">
+                <br><br>
+                <span class="whatsapp"><a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a></span> <!-- WhatsApp -->
+                <span class="google-drive"><a href="https://drive.google.com" target="_blank"><i class="fab fa-google-drive"></i></a></span> <!-- Google Drive -->
+                <span class="india-mart"><a href="https://indiamart.com" target="_blank"><i class="fas fa-store"></i></a></span> <!-- IndiaMart -->
+                <span class="just-dial"><a href="https://www.justdial.com" target="_blank"><i class="fas fa-phone-square"></i></a></span> <!-- Justdial -->
+                <span class="phone"><a href="tel:+1234567890"><i class="fas fa-phone"></i></a></span> <!-- Phone -->
+                <span class="email"><a href="mailto:example@example.com"><i class="fas fa-envelope"></i></a></span> <!-- Email -->
+
+            </div>
+            <div class="manju-location-auth">
+                <span><i class="fas fa-map-marker-alt"></i>Maddilapalem, Ap</span>
+                <div class="manju-auth-links">
+                    <a href="#" class="login-button">Log In</a>
+                    <a href="#" class="signup-button">Sign Up</a>
+
+                    &nbsp;		&nbsp;		&nbsp;		&nbsp;		&nbsp;
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .manju-contact-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-left: 20px;
+            }
+    
+            .manju-contact-info, .manju-location-auth {
+                display: flex;
+                align-items: center;
+            }
+    
+            .manju-contact-info span, .manju-location-auth span {
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                font-size: 14px;
+                color: #333;
+            }
+    
+            .manju-contact-info i, .manju-location-auth i {
+                margin-right: 10px;
+                font-size: 18px; /* Set uniform size for all icons */
+                color: black; /* Default color for icons */
+                width: 24px; /* Set uniform width */
+                height: 24px; /* Set uniform height */
+                line-height: 24px; /* Ensures icons are vertically centered */
+            }
+    
+            /* Hover effect for icons */
+            .manju-contact-info a:hover i, .manju-location-auth a:hover i {
+                color: #0163ea; /* Color on hover */
+            }
+    
+            /* Icon colors */
+            .manju-contact-info .fa-whatsapp { color: black; } /* WhatsApp */
+            .manju-contact-info .fa-envelope { color: black;} /* Gmail */
+            .manju-contact-info .fa-google-drive { color: black; } /* Google Drive */
+            .manju-contact-info .fa-store { color: black; } /* IndiaMart */
+            .manju-contact-info .fa-briefcase { color: black; } /* Google Business */
+            .manju-contact-info .fa-phone-square { color: black; } /* Justdial */
+            .manju-location-auth .fa-map-marker-alt { color: black; } /* Map Marker */
+    
+            .manju-auth-links {
+                display: flex;
+            }
+    
+            .manju-auth-links a {
+                margin-left: 20px;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 10px 20px; /* Button padding */
+                border-radius: 5px; /* Button rounded corners */
+                transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            }
+    
+            .manju-auth-links .login-button {
+                background-color: #0163ea;
+                color: white;
+            }
+    
+            .manju-auth-links .login-button:hover {
+                background-color: #ffb700; /* Background color on hover */
+                color: white; /* Text color on hover */
+            }
+    
+            .manju-auth-links .signup-button {
+                background-color:#0163ea; /* Sign Up button color */
+                color: white;
+            }
+    
+            .manju-auth-links .signup-button:hover {
+                background-color: #ffb700; /* Background color on hover */
+                color: white; /* Text color on hover */
+            }
+    
+            @media (max-width: 768px) {
+                .manju-contact-info .phone,
+                .manju-contact-info .email,
+                .manju-location-auth,
+                .manju-contact-info .fa-briefcase {
+                    display: none;
+                }
+            }
+        </style>
+    </section>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <!-- <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>Klinik</h1>
+        </a> -->
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link ">About</a>
+                <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="life_insurance.html" class="dropdown-item">Life Insurance</a>
+                        <a href="health_insurance.html" class="dropdown-item">Health Insurance</a>
+                        <a href="car_insurance.html" class="dropdown-item">Car Insurance</a>
+                        <a href="home_insurance.html" class="dropdown-item">Home Insurance</a>
+                        <a href="credit_insurance.html" class="dropdown-item">Credit Insurance</a>
+                        <a href="transport_insurance.html" class="dropdown-item">Transport Insurance</a>
+                    </div>
+                </div>
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Calculator's</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="future_value.html" class="dropdown-item">Future Value Calculator</a>
+                        <a href="fixed_value.html" class="dropdown-item">Fixed Value Calculator</a>
+                        <a href="present_value.html" class="dropdown-item">Present Value Calculator</a>
+                        <a href="recuring_deposit.html" class="dropdown-item">Recuring Deposit Calculator</a>
+                        <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Heath Insurance</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html"><span style="color: #000;">Home</span></a></li>
+                    <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
+                    <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="img/s1 (5).png" alt="">
+                        <!-- <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/about-2.jpg" alt="" style="margin-top: -25%;"> -->
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
+                    <h1 class="mb-4">Heath Insurance </h1>
+                    <p>LIC's health insurance plans are tailored to meet different needs, offering individual, family floater, and senior citizen policies. They often come with additional riders for enhanced coverage, such as accidental death benefits and daily hospital cash allowances. Policyholders can choose between different sum insured options, making it easier to select a plan that aligns with their financial and health requirements. These plans also provide the option to renew the policy for a lifetime, ensuring long-term security against rising medical costs. LIC’s extensive network of hospitals and seamless claim settlement process make it a reliable choice for health insurance.</p>
+                    <!-- <p class="mb-4"> With a deep understanding of LIC’s wide range of insurance products, Lakshmi is here to guide you through every step of the insurance process, ensuring that you find the perfect policy to meet your needs.</p> -->
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Our life insurance is flexible Assistance</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>We can save your money. Execution</p>
+                    <!-- <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p> -->
+                    <!-- <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="about.html">Read More</a> -->
+                    <a href="service.html">
+                        <button style="
+                            border-radius: 20px; 
+                            border: solid black; 
+                            background-color: white; 
+                            padding: 10px 20px; 
+                            cursor: pointer;
+                            transition: background-color 0.5s ease;">
+                            Back to services
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+  
+    <!-- Feature End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Team</p>
+                <h1>Our Team Members</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/t1 (4).png" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Vamsidhar</h5>
+                            <!-- <p class="text-primary">Department</p> -->
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/t1 (3).png" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Lakshmi</h5>
+                            <!-- <p class="text-primary">Department</p> -->
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/t1 (2).png" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Babitha</h5>
+                            <!-- <p class="text-primary">Department</p> -->
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/t1 (1).png" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Vana Somesh</h5>
+                            <!-- <p class="text-primary">Department</p> -->
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>VIZAG</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Services</h5>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="gallery.html">Gallery</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                    <!-- <a class="btn btn-link" href="">Laboratory</a> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="term of services.html">Terms of Services</a>
+                    <a class="btn btn-link" href="#">Digital Marketing</a>
+                    <a class="btn btn-link" href="#">WhatsApp CRM</a>
+                    <!-- <a class="btn btn-link" href=""></a> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Our Company</h5>
+                    <a class="btn btn-link" href="https://deltateam.in/">Deltateam.in</a>
+                   
+                    <!-- <a class="btn btn-link" href=""></a> -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="https://deltateam.in/">Deltateam</a>, All Right Reserved deltateam.in.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+<!-- floating icons -->
+
+<div class="floating-icons">
+    <a href="https://wa.me/yourwhatsapplink" target="_blank" class="icon whatsapp" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/yourinstagram" target="_blank" class="icon instagram" title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourtwitter" target="_blank" class="icon twitter" title="Twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+</div>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+<style>
+    .floating-icons {
+    position: fixed;
+    right: 40px;
+    bottom: 98px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between icons */
+}
+
+/* Floating icon styles */
+.floating-icons .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust icon size */
+    height: 50px; /* Adjust icon size */
+    background-color: #fff; /* Background color (optional) */
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    color: #000; /* Default icon color */
+    font-size: 24px; /* Font Awesome icon size */
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Icon color changes on hover */
+.floating-icons .whatsapp {
+    color: #25D366; /* WhatsApp brand color */
+}
+
+.floating-icons .instagram {
+    color: #E4405F; /* Instagram brand color */
+}
+
+.floating-icons .twitter {
+    color: #1DA1F2; /* Twitter brand color */
+}
+
+/* Hover effects */
+.floating-icons .icon:hover {
+    background-color: #000; /* Background color on hover (can be adjusted) */
+    color: #fff; /* Icon color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+</style>
